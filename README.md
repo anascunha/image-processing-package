@@ -1,72 +1,73 @@
-# Projeto: Pacote de Processamento de Imagens
-## Autora do Projeto: Karina Kato
-### Desafio: Criando um Pacote de Processamento de Imagens com Python - Bootcamp Engenharia de Dados com Python
-[(clique aqui para ver o meu perfil na plataforma)](https://dio.me/users/ana_sara_sc)
-#### Tecnologia: Python
-#### Data: 25/10/2024
+# Project: Image Processing Package
+## Project Author: Karina Kato
+### Challenge: Creating an Image Processing Package with Python - Data Engineering Bootcamp with Python
+[(click here to see my profile on the platform)](https://dio.me/users/ana_sara_sc)
+#### Technology: Python
+#### Date: 10/25/2024
 -----------------------------------------
-### Descrição
-O pacote "image_processing-test" é usado para:
+### Description
+The "image_processing-test" package is used for:
 
-- Módulo "Processing":
-  - Correspondência de histograma;
-  - Similaridade estrutural;
-  - Redimensionar imagem;
+- Processing module:
+- Histogram matching;
+- Structural similarity;
+- Resize image;
 
-- Módulo "Utils":
-  - Ler imagem;
-  - Salvar imagem;
-  - Plotar imagem;
-  - Resultado do gráfico;
-  - Plotar histograma;
+- Utils module:
+- Read image;
+- Save image;
+- Plot image;
+- Graph result;
+- Plot histogram;
 ---------------------------------------------
-## Passo a passo da configuração para hospedar um pacote em Python no ambiente de testes Test Pypi
+## Step-by-step configuration for hosting a Python package in the Test Pypi test environment
 
-- [x] Instalação das últimas versões de "setuptools" e "wheel"
+- [x] Installing the latest versions of "setuptools" and "wheel"
 
 ```
 py -m pip install --user --upgrade setuptools wheel
 ```
-- [x] Tenha certeza que o diretório no terminal seja o mesmo do arquivo "setup.py"
+- [x] Make sure the directory in the terminal is the same as the "setup.py" file
 
 ```
 C:\User\anas\image-processing-package> py setup.py sdist bdist_wheel
 ```
 
-- [x] Após completar a instalação, verifique se as pastas abaixo foram adicionadas ao projeto:
-  - [x] build;
-  - [x] dist;
-  - [x] image_processing_test.egg-info.
+- [x] After completing the installation, check if the following folders have been added to the project:
+- [x] build;
+- [x] dist;
+- [x] image_processing_test.egg-info.
 
-- [x] Basta subir os arquivos, usando o Twine, para o Test Pypi:
+- [x] Just upload the files, using Twine, to Test Pypi:
 
 ```
 py -m twine upload --repository testpypi dist/*
 ```
 
-- [x] Após rodar o comando acima no terminal, será pedido para inserir o usuário e senha. Feito isso, o projeto estará hospedado no Test Pypi.hospedá-lo no Pypi diretamente.
+- [x] After running the above command in the terminal, you will be asked to enter your username and password. Once this is done, the project will be hosted on Test Pypi. Host it on Pypi directly.
 
-### Aqui o objetivo não é utilizar o projeto da Karina para postar em meu perfil do Pypi pessoal, visto que o projeto é dela. Ainda não tenho nenhum projeto que possa ser utilizado como pacote.
+### The goal here is not to use Karina's project to post on my personal Pypi profile, since the project is hers. I don't have any projects that can be used as a package yet.
 
-### No entanto, tenha em mente que o Test Pypi, como o próprio nome diz, é apenas um ambiente de testes. Para que o projeto esteja disponível como um pacote para ser usado publicamente, é necessário hospedá-lo no site oficial do Pypi.
-----------------------------------------------------
-## Instalação local, após hospedagem no Test Pypi
+### However, keep in mind that Test Pypi, as its name suggests, is just a testing environment. In order for the project to be available as a package for public use, it is necessary to host it on the official Pypi website. ----------------------------------------------------
+## Local installation, after hosting on Test Pypi
 
-- [x] Instalação de dependências
+- [x] Installing dependencies
 ```
 pip install -r requirements.txt
 ```
 
-- [x] Instalção do Pacote
+- [x] Installing the package
 
-Use o gerenciador de pacotes ```pip install -i https://test.pypi.org/simple/ image-processing-test ```para instalar image_processing-test
+Use the package manager ```pip install -i https://test.pypi.org/simple/ image-processing-test ```to install image_processing-test
 
 ```bash
-pip install image-processing-test
+pip install bleach==3.3.0
+pip install matplotlib
+pip install image-processing-test (Test Pypi)
 ```
 
-## Autor (quem hospedou o projeto no Test Pypi)
+## Author (who hosted the project on Test Pypi)
 Ana Cunha
 
-## Licença
+## License
 [MIT](https://choosealicense.com/licenses/mit/)
