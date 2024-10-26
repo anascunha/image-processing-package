@@ -9,16 +9,16 @@
 The "image_processing-test" package is used for:
 
 - Processing module:
-- Histogram matching;
-- Structural similarity;
-- Resize image;
+  - Histogram matching;
+  - Structural similarity;
+  - Resize image;
 
 - Utils module:
-- Read image;
-- Save image;
-- Plot image;
-- Graph result;
-- Plot histogram;
+  - Read image;
+  - Save image;
+  - Plot image;
+  - Graph result;
+  - Plot histogram;
 ---------------------------------------------
 ## Step-by-step configuration for hosting a Python package in the Test Pypi test environment
 
@@ -61,8 +61,6 @@ pip install -r requirements.txt
 Use the package manager ```pip install -i https://test.pypi.org/simple/ image-processing-test ```to install image_processing-test
 
 ```bash
-pip install bleach==3.3.0
-pip install matplotlib
 pip install image-processing-test (Test Pypi)
 ```
 
