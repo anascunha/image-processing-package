@@ -30,7 +30,7 @@ py -m pip install --user --upgrade setuptools wheel
 - [x] Tenha certeza que o diretório no terminal seja o mesmo do arquivo "setup.py"
 
 ```
-C:\User\Henrique\image-processing-package> py setup.py sdist bdist_wheel
+C:\User\anas\image-processing-package> py setup.py sdist bdist_wheel
 ```
 
 - [x] Após completar a instalação, verifique se as pastas abaixo foram adicionadas ao projeto:
